@@ -1,0 +1,8 @@
+
+public class PrintName {
+	public static void main(String[] args) {
+		
+		Name.Input();
+		System.out.println();
+	}
+}

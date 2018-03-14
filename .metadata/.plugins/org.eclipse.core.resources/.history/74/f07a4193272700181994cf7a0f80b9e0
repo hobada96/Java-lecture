@@ -1,0 +1,10 @@
+
+public class Test {
+	public static void main(String[] args) {
+		double weight;
+		weight = 35.7;
+		System.out.println(weight);
+		System.out.println("현제 체중은 "+weight+" 입니다.");
+		Syetem.out.println(weight+ 10);
+	}
+}

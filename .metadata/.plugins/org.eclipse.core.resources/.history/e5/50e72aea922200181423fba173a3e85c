@@ -1,0 +1,6 @@
+
+public class Printname {
+	public static void print(String a) {
+		System.out.println("TaehoKim");
+	}
+}

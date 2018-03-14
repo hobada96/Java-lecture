@@ -1,0 +1,9 @@
+
+public class Test {
+	public static void main(String[] args) {
+		//Test1.scope();
+		//Test2.str();
+		//Test3.Inter();
+		Test4.arlt();
+	}
+}
