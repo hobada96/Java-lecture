@@ -1,0 +1,15 @@
+public class 04P01 {
+    public static void main(String s[]) {
+        char x[] = s[0].toCharArray();
+        char y[] = s[1].toCharArray();
+        System.out.println(equals(x, y));
+    }
+
+    public static boolean equals(char[] x, char[] y) {
+        
+	for (int i=0;i<x.length;i++) {
+		if(x[i] != y[i]) return false;            
+        }
+        return true;
+    }
+}

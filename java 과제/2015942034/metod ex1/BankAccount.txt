@@ -1,0 +1,28 @@
+public class BankAccount {
+    int money = 0;
+    String number;
+    double point = 0;
+
+    public BankAccount(String number) {
+        this.number = number;
+    }
+
+    public void deposit(int money) {  //입금
+        this.money = money + this.money;
+        this.point = point + money / 100;
+    }
+
+    public void withdraw(int money) { //인출
+        this.money = this.money - money;
+    }
+
+    public void transferTo(BankAccount ba2, int money) {
+        this.withdraw(money);
+        ba2.deposit(money);
+    }
+
+    @Override
+    public String toString() {
+        return number + "계좌의 현재 금액은 " + money + "포인트는 " + point + "입니다.";
+    }
+}

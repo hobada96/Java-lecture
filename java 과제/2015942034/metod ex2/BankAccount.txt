@@ -1,0 +1,9 @@
+public class BankAccount {
+    int money = 0;
+    String number;
+    double point = 0;
+
+    public BankAccount(String number) {
+        this.number = number;
+    }
+}

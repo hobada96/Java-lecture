@@ -1,0 +1,33 @@
+public class Test1 {
+    public static void main(String[] args) {
+        BankAccount ba1 = new BankAccount("B-001");
+        deposit(ba1, 1000); // 1000원 입금
+        deposit(ba1, 500); // 500원 입금
+        withdraw(ba1, 700); // 700원 인출
+
+        BankAccount ba2 = new BankAccount("B-002");
+        transferTo(ba1, ba2, 300); // ba1계좌에서 ba2계좌로 300원 이체
+
+        System.out.println(toString(ba1));
+        System.out.println(toString(ba2));
+    }
+
+    private static void deposit(BankAccount ba1, int money) {
+        ba1.money = ba1.money + money;
+        ba1.point = ba1.point + (double) money / 100;
+    }
+
+    private static void withdraw(BankAccount ba1, int money) {
+        ba1.money = ba1.money - money;
+    }
+
+    private static void transferTo(BankAccount ba1, BankAccount ba2, int money) {
+        withdraw(ba1, money);
+        deposit(ba2, money);
+    }
+
+    private static String toString(BankAccount ba1) {
+        return "계좌명 : " + ba1.number + " 현재 금액은 : " + ba1.money + " 포인트는 : " + ba1.point;
+    }
+
+}

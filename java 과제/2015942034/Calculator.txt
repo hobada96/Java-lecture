@@ -1,0 +1,37 @@
+public class Calculator {
+    double input1, input2;
+    double value;
+    String operator;
+
+    public void setOperands(double input1, double input2) {
+        this.input1 = input1;
+        this.input2 = input2;
+    }
+
+    public void setOperator(String operator) {
+        this.operator = operator;
+    }
+
+    public void doCalculation(Calculator calc) {
+        if (operator == "+") {
+            value = this.input1 + this.input2;
+        }
+        else if (operator == "-") {
+            value = this.input1 - this.input2;
+        }
+        else if (operator == "*") {
+            value = this.input1 * this.input2;
+        }
+        else if (operator == "/") {
+            value = this.input1 / this.input2;
+        }
+        else System.out.println("Error!");
+    }
+
+    @Override
+    public String toString() {
+        return this.input1 + " " +this.operator + " " +this.input2 + " = " + value;
+    }
+}
+
+

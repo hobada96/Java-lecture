@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+import static java.lang.Integer.sum;
+
+public class 03P01 {
+    public static void main(String args[]) {
+        Scanner ki = new Scanner(System.in);
+        int n1 = ki.nextInt();
+        int n2 = ki.nextInt();
+        int sum = sum(n1, n2);
+        System.out.println(sum);
+    }
+
+    public static int sum(int n1,int n2){
+        return (n1+n2);
+    }
+}

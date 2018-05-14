@@ -1,0 +1,14 @@
+public class Test1 {
+    public static void main(String[] args) {
+        BankAccount	ba1=new BankAccount("B-001");
+        ba1.deposit(1000); // 1000원 입금, 포인트 10원 누적
+        ba1.deposit(500); // 500원 입금, 포인트 5원 누적
+        ba1.withdraw(700); // 700원 인출
+
+        BankAccount	ba2=new BankAccount("B-002");
+        ba1.transferTo(ba2,300); // ba1계좌에서 ba2계좌로 300원 이체, ba2계좌에 포인트 3원 누적
+
+        System.out.println(ba1);
+        System.out.println(ba2);
+    }
+}
